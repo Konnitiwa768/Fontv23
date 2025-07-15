@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>手書きフォントメーカー</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    canvas { border: 1px solid #333; touch-action: none; }
+    body { font-family: sans-serif; padding: 1rem; }
+    input, button { margin-top: 0.5rem; display: block; }
+  </style>
+</head>
+<body>
+  <h1>🖋 手書きフォント作成ツール</h1>
+  <canvas id="canvas" width="300" height="300"></canvas>
+  <input id="char" placeholder="例：味、無など1文字">
+  <button onclick="saveGlyph()">📝 保存</button>
+  <button onclick="buildFont()">🛠 フォントビルド</button>
+  <button onclick="uploadFont()">⬆️ GitHubアップロード</button>
+  <p id="log"></p>
+
+  <script src="/static/main.js"></script>
+</body>
+</html>
