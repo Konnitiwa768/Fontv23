@@ -93,7 +93,7 @@ def build_font():
 @app.post("/upload_font")
 def upload_font():
     GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
-    REPO = "yourusername/yourrepo"  # 変更！
+    REPO = "Konnitiwa768/Fontv23"  # 変更！
     PATH = f"fonts/myfont-{int(time.time())}.ttf"
     url = f"https://api.github.com/repos/{REPO}/contents/{PATH}"
 
