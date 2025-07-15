@@ -27,7 +27,7 @@ jobs:
           pip install --upgrade pip
           pip install fonttools pillow fastapi jinja2 python-multipart potrace
 
-      - name: 🛠 オプション: フォントビルドを試行
+      - name: 🛠 オプション フォントビルドを試行
         run: |
           python -c "import app; app.build_font()" || echo "ビルド失敗 → 続行"
 
